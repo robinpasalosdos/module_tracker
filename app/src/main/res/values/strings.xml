@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Module Tracker</string>
+    <string name="teacher">Teacher</string>
+    <string name="student">Student</string>
+    <string name="module_1">MODULE 1</string>
+    <string name="right"><![CDATA[>]]></string>
+    <string name="left"><![CDATA[<]]></string>
+    <string name="details">Details:</string>
+    <string name="title_introduction_to_anatomy">Title: Introduction to Anatomy</string>
+    <string name="due_date">Due Date:</string>
+    <string name="time">Time:</string>
+    <string name="room_no">Room No:</string>
+    <string name="status">Status:</string>
+    <string name="download">Download</string>
+    <string name="todo">TODO</string>
+    <string name="mission">Mission</string>
+    <string name="our_mission_is_to_produce_a_reliable_software_that_will_make_people_more_productive_and_successful">Our mission is to produce a reliable software that will make people more productive and successful</string>
+    <string name="vision">Vision</string>
+    <string name="to_develop_software_that_will_revolutionize_the_tech_industries_to_become_a_top_notch_company_that_can_compete_on_a_global_scale_and_to_bring_innovations_that_will_benifits_the_community_and_its_people">To develop software that will revolutionize the tech industries, to become a top-notch company that can compete on a global scale and to bring innovations that will benifits the community and its people</string>
+    <string name="update">Update</string>
+    <string name="password">Password:</string>
+    <string name="username">Username:</string>
+    <string name="phone_no">Phone no.:</string>
+    <string name="email">Email:</string>
+    <string name="section">Section:</string>
+    <string name="year">Year:</string>
+    <string name="name">Name:</string>
+    <string name="account_management">Account Management</string>
+</resources>

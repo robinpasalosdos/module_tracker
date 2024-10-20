@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Student">
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lb_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/lb_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <ImageView
+        android:id="@+id/ic_student_menu_bar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/menu_bar_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <Spinner
+        android:id="@+id/sp_subjects"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/mt_button4"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <Button
+        android:id="@+id/btn_module_name"
+        android:layout_width="169dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/azure"
+        android:textColor="@color/white"
+        android:text="Module 1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_student_right"
+        app:layout_constraintStart_toEndOf="@+id/btn_student_left"
+        app:layout_constraintTop_toBottomOf="@+id/sp_subjects" />
+
+    <Button
+        android:id="@+id/btn_student_right"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/mt_button4"
+        android:text="@string/right"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/vw_student"
+        app:layout_constraintTop_toBottomOf="@+id/sp_subjects" />
+
+    <Button
+        android:id="@+id/btn_student_left"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/mt_button4"
+        android:text="@string/left"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/vw_student"
+        app:layout_constraintTop_toBottomOf="@+id/sp_subjects" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="275dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_module_name"
+        app:layout_constraintEnd_toEndOf="@+id/btn_student_right"
+        app:layout_constraintStart_toStartOf="@+id/btn_student_left" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="274dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btn_student_right"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_student_left"
+        app:layout_constraintTop_toBottomOf="@+id/btn_module_name" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="61dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btn_student_left"
+        app:layout_constraintTop_toTopOf="@+id/btn_module_name" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="61dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/btn_student_right"
+        app:layout_constraintTop_toTopOf="@+id/btn_module_name" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="61dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/btn_student_left"
+        app:layout_constraintTop_toTopOf="@+id/btn_module_name" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="61dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btn_student_right"
+        app:layout_constraintTop_toTopOf="@+id/btn_module_name" />
+
+    <View
+        android:id="@+id/vw_student"
+        android:layout_width="273dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_module_name" />
+
+    <TextView
+        android:id="@+id/tv_student_no_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vw_student"
+        app:layout_constraintEnd_toEndOf="@+id/vw_student"
+        app:layout_constraintStart_toStartOf="@+id/vw_student"
+        app:layout_constraintTop_toBottomOf="@+id/btn_module_name" />
+
+    <Button
+        android:id="@+id/btn_student_download"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/mt_button3"
+        android:text="Download"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vw_student"
+        app:layout_constraintEnd_toEndOf="@+id/vw_student" />
+
+    <TextView
+        android:id="@+id/tv_student_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/details"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/vw_student"
+        app:layout_constraintTop_toBottomOf="@+id/btn_module_name" />
+
+    <TextView
+        android:id="@+id/lbl_student_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/title_introduction_to_anatomy"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/vw_student"
+        app:layout_constraintTop_toBottomOf="@+id/tv_student_details" />
+
+    <TextView
+        android:id="@+id/lbl_student_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/due_date"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/vw_student"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_student_title" />
+
+    <TextView
+        android:id="@+id/lbl_student_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/time"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/vw_student"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_student_date" />
+
+    <TextView
+        android:id="@+id/lbl_student_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/room_no"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/vw_student"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_student_time" />
+
+    <TextView
+        android:id="@+id/lbl_student_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/status"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/vw_student"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_student_room" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    
